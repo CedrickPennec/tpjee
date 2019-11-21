@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>JavaEETestProject</display-name>
+
+  <servlet>
+    <servlet-name>ConnexionJSP</servlet-name>
+    <jsp-file>/META-INF/MyJSP/Connexion.jsp</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ListeJSP</servlet-name>
+    <jsp-file>/META-INF/MyJSP/ListeUsers.jsp</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ProfilJSP</servlet-name>
+    <jsp-file>/META-INF/MyJSP/Profil.jsp</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CreationJSP</servlet-name>
+    <jsp-file>/META-INF/MyJSP/Creation.jsp</jsp-file>
+  </servlet>
+
+  <servlet>
+    <servlet-name>EditionJSP</servlet-name>
+    <jsp-file>/META-INF/MyJSP/Edition.jsp</jsp-file>
+  </servlet>
+
+</web-app>

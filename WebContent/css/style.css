@@ -1,0 +1,62 @@
+@charset "ISO-8859-1";
+
+body{
+    background: url("https://wallpapersgood.com/resize/800x480/wallpapers/main/201328/gradient-shum-oboina-23a6562.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table {
+    background-color: rgb(145, 145, 145);
+}
+
+header h1{
+    float: left;
+}
+
+header h2{
+    float: right;
+    padding: 10px 30px 10px 30px;
+    border: solid 2px black;
+}
+
+header {
+    height: 5em;
+}
+
+.edit{
+    margin:0;
+    padding:0px 100px 0px 0px;
+    float: left;
+}
+
+.retour{
+    clear: left;
+}
+
+.profil{
+    text-align: center;
+    font: 2em;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profil img {
+    border-radius: 50%;
+}
+
+.ancien{
+    margin:0;
+    padding:0px 100px 0px 0px;
+    float: left;
+}
+
+.cookie{
+    border: solid 2px white;
+    border-radius: 3px;
+    background-color:lightgreen;
+}
+
+.cookie p{
+    margin-left: 10px;
+}
