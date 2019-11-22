@@ -16,7 +16,7 @@
 
         <%
             Cookie cookieCreation = new Cookie("Create","Utilisateur%20ajoute");
-            cookieCreation.setMaxAge(10);
+            cookieCreation.setMaxAge(1);
             response.addCookie( cookieCreation );
         %>
 

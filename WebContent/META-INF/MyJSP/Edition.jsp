@@ -61,7 +61,7 @@
 
         <%  String profilurl = ("/tpjeesite/profil?id=" +  user.getId());
             Cookie cookieEdition = new Cookie("Edit","Modification%20effectuee");
-            cookieEdition.setMaxAge(10);
+            cookieEdition.setMaxAge(1);
             response.addCookie( cookieEdition );
         %>
 

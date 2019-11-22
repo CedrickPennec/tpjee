@@ -47,6 +47,7 @@
         <table id="example">
             <thead>
                 <tr>
+                    <th scope="col"></th>
                     <th scope="col">Id</th>
                     <th scope="col">username</th>
                     <th scope="col">firstname</th>
@@ -68,6 +69,11 @@
                 %>
 
                 <tr>
+                    <td>
+                        <form method="Post" onsubmit="return validation(this);">
+                            <input type="checkbox">
+                        </form>
+                    </td>
                     <td><%= user.getId() %></td>
                     <td><%= user.getUsername() %></td>
                     <td><%= user.getFirstname() %></td>
