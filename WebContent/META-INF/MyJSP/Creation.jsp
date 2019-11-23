@@ -14,12 +14,6 @@
             <h2><%= session.getAttribute("username") %></h2>
         </header>
 
-        <%
-            Cookie cookieCreation = new Cookie("Create","Utilisateur%20ajoute");
-            cookieCreation.setMaxAge(1);
-            response.addCookie( cookieCreation );
-        %>
-
         <div>
             <form action="/tpjeesite/site/user" method="Post">
                 <label for="username">Username</label>
@@ -38,9 +32,18 @@
                 <input type="text" name="photo"><br>
                 <label for="email">Email</label>
                 <input type="text" name="email"><br>
-                <input type="submit" value="Ajouter">
+                <input type="submit" value="Ajouter" onclick = "putCookie()">
             </form>
         </div>
-
+        <script type="text/javascript">
+        function putCookie(){
+            <%
+                Cookie cookieCreation = new Cookie("Create","Utilisateur%20ajoute");
+                cookieCreation.setMaxAge(10);
+                response.addCookie( cookieCreation );
+            %>
+            return true;
+        }
+        </script>
     </body>
 </html>

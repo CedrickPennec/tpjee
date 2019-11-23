@@ -39,7 +39,7 @@
             <p>Mot de passe : <%= user.getPassword() %></p>
         </div>
 
-        <form class="edit" action="/tpjeesite/site/user/<%= user.getId() %>" method="Post">
+        <form class="edit" action="/tpjeesite/site/user/<%= user.getId() %>" method="Post" onSubmit="putCookie()">
             <label for="username">Username</label>
             <input type="text" name="username" value="<%= user.getUsername() %>"><br>
             <label for="password">Mot de passe</label>
@@ -59,14 +59,22 @@
             <input type="submit" value="Editer">
         </form>
 
-        <%  String profilurl = ("/tpjeesite/profil?id=" +  user.getId());
-            Cookie cookieEdition = new Cookie("Edit","Modification%20effectuee");
-            cookieEdition.setMaxAge(1);
-            response.addCookie( cookieEdition );
-        %>
+        <%  String profilurl = ("/tpjeesite/profil?id=" +  user.getId());%>
 
         <form class="retour" action="<%= profilurl %>"  method="Post">
             <input type="submit" value="Retour">
         </form>
+
+        <script type="text/javascript">
+        function putCookie(){
+            <%
+                Cookie cookieEdition = new Cookie("Edit","Modification%20effectuee");
+                cookieEdition.setMaxAge(10);
+                response.addCookie( cookieEdition );
+            %>
+
+            return true;
+        }
+        </script>
     </body>
 </html>

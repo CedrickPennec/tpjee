@@ -93,6 +93,7 @@ public class ControllerUser {
         user.setEmail(email);
 
         this.users.replace(user.getId(), user);
+
         this.servletContext.setAttribute("users", users);
 
         URI profilpath = new URI("http://localhost:8080/tpjeesite/liste");
